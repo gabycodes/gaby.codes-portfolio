@@ -1,3 +1,9 @@
-body {
-    background: tomato;
-}
+@import 'partials/setup';
+@import 'partials/global';
+@import 'partials/topbar';
+@import 'partials/hero';
+@import 'partials/about';
+@import 'partials/skills';
+@import 'partials/portfolio';
+@import 'partials/contact';
+@import 'partials/footer';

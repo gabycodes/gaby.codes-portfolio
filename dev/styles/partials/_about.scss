@@ -1,0 +1,74 @@
+.about {
+    padding-bottom: 25px;
+    position: relative;
+
+    .imageHolder {
+        background: rgb(0, 195, 255);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        border: 12px solid white;
+        position: relative;
+        bottom: 30px;
+    }
+    img.icon {
+        width: 45%;
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        transform: translate(-50%,-50%);
+    }
+    .imageHolder.bottom {
+        bottom: -53px;
+    }
+    img.gaby {
+        max-width: 125px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 20px auto 0 auto;
+        border: 6px solid rgb(236, 236, 236);
+    }
+    h2 {
+        position: relative;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        background: rgb(202, 202, 202);
+        width: 2px;
+        height: 37px;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h2::after {
+        content: '';
+        position: absolute;
+        background: rgb(202, 202, 202);
+        width: 2px;
+        height: 25px;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    p {
+        max-width: 700px;
+        margin: 10px auto;
+        line-height: 2.1rem;
+    }
+    button {
+        position: relative;
+    }
+    button::after {
+        content: '';
+        position: absolute;
+        background: rgb(202, 202, 202);
+        width: 2px;
+        height: 77px;
+        bottom: -84px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}

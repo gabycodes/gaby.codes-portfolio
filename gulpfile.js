@@ -17,6 +17,28 @@ gulp.task('styles', function () {
         .pipe(reload({ stream: true }));
 });
 
+gulp.task('scripts', () => {
+    gulp.src('./dev/scripts/main.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(gulp.dest('./public/scripts'))
+        .pipe(reload({ stream: true }));
+});
+gulp.task('watch', function () {
+    gulp.watch('./dev/styles/**/*.scss', ['styles']);
+    gulp.watch('./dev/scripts/main.js', ['scripts']);
+    gulp.watch('*.html', reload);
+});
+
+gulp.task('browser-sync', () => {
+    browserSync.init({
+        server: '.'
+    })
+});
+
+gulp.task('default', ['browser-sync', 'styles', 'scripts', 'watch']);
+
 //In the block above, we've created a task called 'styles', this is our reference name. We can use this name in other tasks, or to call it individually. This task wrapper is used throughout Gulp to create different tasks.
 
 //Inside the task wrapper, we write what is essentially, our script for our tasks. We use the return keyword to utilize the output of our tasks, and use a built in Gulp method called .src to pass in our files. By placing an asterisks in the place of a filename, we are essentially saying, "Go find any file that has an extension of .scss".
@@ -31,9 +53,6 @@ gulp.task('styles', function () {
 
 //With all plugins, we can provide them options and data that helps them complete their task.
 
-gulp.task('watch', () => {
-    gulp.watch('./dev/styles/**/*.scss', ['styles']);
-});
 
 //Gulp has a built in watch method, that allows us to provide what files to watch for changes, then run an existing task.
 
@@ -43,37 +62,19 @@ gulp.task('watch', () => {
 
 //Gulp has a massive development community and has over 1400 plugins at the time of writing.Let's look at setting up a new task, and also updating an existing task with a new plugin.
 
-gulp.task('scripts', () => {
-    gulp.src('./dev/scripts/main.js')
-});
+
 //To leverage the power of ES6 in our projects, we can use a tool called https://babeljs.io/ to 'transpile' our code from ES6 to browser-friendly ES5 JavaScript. Much like Sass, we need to run it through a tool that will convert it for us.
 
-gulp.task('scripts', () => {
-    gulp.src('./dev/scripts/main.js')
-        .pipe(babel({
-            presets: ['env']
-        }))
-        .pipe(gulp.dest('./public/scripts'))
-        .pipe(reload({ stream: true }));
-});
-gulp.task('watch', function () {
-    gulp.watch('./dev/styles/**/*.scss', ['styles']);
-    gulp.watch('./dev/scripts/main.js', ['scripts']);
-    gulp.watch('*.html', reload);
-});
+
 //Next, we'll add it our 'scripts' task, which will tell us of any errors, convert our ES6 code to browser friendly code, concatenate any files together into one, and then put it in a destination folder.
 
 //When we run the task, our ES6 will be converted to ES5 code and any errors will be displayed in the command line. Note If there is an error, Gulp will stop and exit. You will have to fix the error and rerun Gulp.
 
-gulp.task('browser-sync', () => {
-    browserSync.init({
-        server: '.'
-    })
-});
+
 
 //We can now create a task for browsersync to run, and provide an object defining the settings needed. For now, we will define the base directory of our application from which to serve the files from. When using other tools such as MAMP for Wordpress, it's possible to mask an existing address using the proxy property.
 
-gulp.task('default', ['browser-sync', 'styles', 'scripts', 'watch']);
+
 //At this point, we have four tasks that all serve a purpose. One for CSS, one for JavaScript and one that watches our files, one for browser-sync and one that runs the specific tasks.
 
 //However, we can make one master task that accomplishes all of these in one go.Right now, if we were to enter the project, we could run gulp watch and it would start the watch task, which would in turn wait for us to make a change to our files.As well, we wouldn't be able to run browser-sync because it's not running just yet.

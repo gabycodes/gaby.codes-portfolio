@@ -1,0 +1,36 @@
+.topBar {
+    background: rgb(21, 35, 53);
+    
+    i {
+        color: white;
+        margin: 0 10px;
+        font-size: 2rem;
+    }
+    nav {
+        background: white;
+        align-content: center;
+        ul {
+            width: 100%;
+        }
+        li {
+            margin: 10px 10px 20px 10px;
+            position: relative;
+            top: -5px;
+        }
+        li.logo {
+            margin: 0;
+            top: 0;
+        }
+    }
+    .social {
+        display: block;
+        padding: 10px;
+        
+    }
+    p {
+        font-size: 3rem;
+        color: rgb(214, 0, 82);
+        margin: 20px 0;
+    }
+    
+}
