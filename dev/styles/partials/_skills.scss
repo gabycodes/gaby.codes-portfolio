@@ -11,32 +11,26 @@
         transform: translate(-50%,-50%);
     }
     h2 {
-        margin-bottom: 0;
+        margin: 45px auto 55px auto;
+    }
+    h3 {
+        text-transform: none;
     }
     p {
         margin-top: 0;
     }
     .techSkills {
-        margin: 40px 0;
+        margin: 42px 0;
     }
     .techSkills i {
-        font-size: 8vw;
-        margin: 10px;
+        font-size: 8rem;
     }
-    .softSkills li {
-        width: 30%;
-        text-align: left;
-        margin-right: 1.5%;
+    .techSkills li {
+        width: 18%;
+        margin-bottom: 20px;
     }
-    .softSkills li:nth-child(3n) {
-        margin-right: 0;
-    }
-    .softSkills i {
-        // color: rgb(0, 195, 255);
-        margin-right: 5px;
-        
-    }
-    .softSkills i, .softSkills p {
+    li img {
+        max-width: 90px;
         display: inline-block;
     }
 }

@@ -1,0 +1,23 @@
+footer {
+    background: rgb(21, 35, 53);
+    color: white;
+    font-size: 1.3rem;
+    padding: 20px 0;
+    
+    a {
+        color: white;
+    }
+    .credit {
+        float: left;
+    }
+    .social {
+        float: right;
+    }
+    p {
+        display: inline-block;
+        font-size: 1.3rem;
+    }
+    li {
+        margin: 1.2rem 5px;
+    }
+}

@@ -1,0 +1,42 @@
+.portfolio {
+    padding: 25px 0 70px 0;
+    max-width: 900px;
+    margin: 0 auto;
+
+    .container {
+        width: 100%;
+        padding: 0 25px;
+    }
+    .imageHolder, .content {
+        width: 50%;
+        float: left;
+    }
+    img {
+        // -webkit-filter: drop-shadow(5px 5px 5px rgba(80, 80, 80, 0.5));
+        // filter: drop-shadow(5px 5px 5px rgba(80, 80, 80, 0.5));
+     }
+    .content {
+        padding: 20px;
+        text-align: left;
+    }
+    p {
+        line-height: 2rem;
+    }
+    .content button {
+        border-radius: 0;
+        border-color: rgb(168, 168, 168);
+    }
+    .content button:first-of-type {
+        margin-right: 15px;
+        border:2px solid transparent;
+        border-image: linear-gradient(45deg, rgb(255, 145, 0),rgb(224, 0, 17));
+        border-image-slice: 1;
+    }
+    // .flickity-vieport {
+    //     max-height: 390px;
+    // }
+    // .flickity-page-dots {
+    //     position: relative;
+    //     top: 10px;
+    // }
+}
