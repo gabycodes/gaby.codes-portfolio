@@ -31,7 +31,7 @@
     h2::before {
         content: '';
         position: absolute;
-        background: rgb(202, 202, 202);
+        background: #e0e0e0;
         width: 1.5px;
         height: 37px;
         top: -40px;
@@ -41,7 +41,7 @@
     h2::after {
         content: '';
         position: absolute;
-        background: rgb(202, 202, 202);
+        background: #e0e0e0;
         width: 1.5px;
         height: 25px;
         bottom: -25px;
@@ -59,7 +59,7 @@
     button::after {
         content: '';
         position: absolute;
-        background: rgb(202, 202, 202);
+        background: #e0e0e0;
         width: 1.5px;
         height: 77px;
         bottom: -84px;

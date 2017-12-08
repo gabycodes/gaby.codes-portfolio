@@ -7,17 +7,19 @@
         width: 100%;
         padding: 0 25px;
     }
+
     .imageHolder, .content {
         width: 50%;
         float: left;
     }
-    img {
-        // -webkit-filter: drop-shadow(5px 5px 5px rgba(80, 80, 80, 0.5));
-        // filter: drop-shadow(5px 5px 5px rgba(80, 80, 80, 0.5));
-     }
     .content {
         padding: 20px;
         text-align: left;
+    }
+    .container:nth-child(2n + 2) {
+        .imageHolder, .content {
+            // float: right;
+        }
     }
     p {
         line-height: 2rem;
