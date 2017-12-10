@@ -40,17 +40,24 @@ h2, h3 {
     text-transform: uppercase;
 }
 h2 {
-    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
     letter-spacing: 0.5px;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     letter-spacing: 0.5px;
 }
 p {
     font-size: 1.5rem;
     letter-spacing: 0.5px;
-    // font-weight: 300;
+}
+.container p:first-of-type {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
 }
 button {
     font-size: 1.3rem;
@@ -61,4 +68,7 @@ button {
     border: 2px solid #2c3e50;
     padding: 5px 15px;
     margin: 25px auto;
+}
+.imageHolder {
+    z-index: 3;
 }

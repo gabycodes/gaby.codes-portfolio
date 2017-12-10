@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio!</title>
     <script src="https://use.fontawesome.com/9dd6041014.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|OpenSans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="dev/styles/animate.css">
@@ -44,10 +44,10 @@
                     <!-- <a href="#">Gaby Küpfer</a> -->
                 </li>
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#toSkills">Skills</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#toContact">Contact</a>
                 </li>
                 <li>
                     <a href="#">Blog</a>
@@ -57,7 +57,8 @@
     </header>
 
     <section class="hero">
-    <!-- typed.js stuff! -->
+    <!-- <h1>Gaby Küpfer</h1>
+    <h2>Web Developer</h2> -->
     <div class="typed_wrap">
         <h1>Gaby <span class="typed"></span></h1>
     </div>
@@ -68,20 +69,25 @@
             <div class="imageHolder">
                 <img src="public/assets/lightbulb.png" alt="" class="icon">
             </div>
-            <h2>About Me</h2>
-            <img src="public/assets/Gaby.jpg" alt="" class="gaby wow fadeIn">
-            <h3 class="wow fadeInUp">Gaby Küpfer - Web Developer</h3>
-            <p class="wow fadeInUp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et veritatis ea minus incidunt perferendis placeat, fuga natus debitis, quidem quia aliquid suscipit. Cum eligendi dolorum repellat quo qui, porro officia.</p>
-            <p class="wow fadeInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatum harum odit, laboriosam excepturi cupiditate ad saepe molestias veritatis, nesciunt illum quae aut quibusdam. Sit, inventore eum voluptatum voluptate blanditiis ratione laboriosam aliquid consectetur commodi molestias numquam quo recusandae? A!</p>
-            <button>More About Me</button>
+            <h2>About</h2>
+            <img src="public/assets/Gaby.jpg" alt="" class="gaby">
+            <div class="makeOpaque">
+                <div class="wow fadeInDown line1" data-wow-duration="3s"></div>
+                <h3>Gaby Küpfer</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et veritatis ea minus incidunt perferendis placeat, fuga natus debitis, quidem quia aliquid suscipit. Cum eligendi dolorum repellat quo qui, porro officia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatum harum odit, laboriosam excepturi cupiditate ad saepe molestias veritatis, nesciunt illum quae aut quibusdam. Sit, inventore eum voluptatum voluptate blanditiis ratione laboriosam aliquid consectetur commodi molestias numquam quo recusandae? A!</p>
+                <button>More About Me</button>
+            </div>
+            <div class="wow fadeInDown line2" data-wow-duration="3s"></div>
             <div class="imageHolder bottom">
                 <img src="public/assets/brain.png" alt="" class="icon">
             </div>
         </div>
     </section>
 
-    <section class="skills" id="skills">
+    <section class="skills">
         <div class="wrapper">
+            <div id="toSkills"></div>
             <h2>Skills and Tools</h2>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
             <div class="techSkills">
@@ -133,18 +139,19 @@
     </section>
 
     <section class="portfolio clearfix" id="portfolio">
+        <h2>Latest <strong>Work</strong></h2>
         <div class="container clearfix">
             <div class="imageHolder wow fadeInLeft">
                 <img src="public/assets/2_macbookair13_front.png" alt="">
             </div>
             <div class="content">
-                <h3>This Project</h3>
+                <h3>Taco Vs Sushi</h3>
                 <p class="tools">Gulp, React, JavaScript, CSS3, HTML5</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam veritatis dignissimos.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio cum ab, porro accusamus voluptatibus
                 pariatur commodi culpa voluptate unde tempore, cumque assumenda numquam obcaecati!</p>
                 <button>View Live</button>
-                <button>GitHub</button>
+                <button>View on GitHub</button>
             </div>
         </div>
         <div class="container clearfix">
@@ -155,7 +162,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio cum ab, porro accusamus voluptatibus pariatur
                     commodi culpa voluptate unde tempore, cumque assumenda numquam obcaecati!</p>
                 <button>View Live</button>
-                <button>GitHub</button>
+                <button>View on GitHub</button>
             </div>
             <div class="imageHolder wow fadeInRight">
                 <img src="public/assets/2_macbookair13_front.png" alt="">
@@ -172,44 +179,73 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio cum ab, porro accusamus voluptatibus
                 pariatur commodi culpa voluptate unde tempore, cumque assumenda numquam obcaecati!</p>
                 <button>View Live</button>
-                <button>GitHub</button>
+                <button>View on GitHub</button>
             </div>
         </div>
     </section>
 
-    <section class="quotes main-carousel">
-        <div class="carousel-cell">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto perspiciatis assumenda nisi quas sequi quidem pariatur corrupti nesciunt sed qui, explicabo temporibus ex eius cupiditate ipsa molestiae officia repudiandae doloremque!</p>
-            <p class="credit">This Person</p>
-        </div>
-        <div class="carousel-cell">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam ab laudantium dolor inventore. Quisquam id suscipit repellendus neque amet.</p>
-            <p class="credit">This Person</p>
-        </div>
-        <div class="carousel-cell">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque pariatur commodi praesentium quod animi perspiciatis expedita.</p>
-            <p class="credit">This Person</p>
+    <section class="quotes">
+        <img src="public/assets/quotes.png" alt="" class="quotesBackground">
+        <div class="main-carousel">
+            <div class="carousel-cell">
+                <p>Gaby is very diligent in her work, always following up with me on where she was according to plan and documenting everything that she did. Working with her was a true pleasure and I'd love to work with her again.</p>
+                <p class="credit">Alessia Di Cecco | Project Manager</p>
+            </div>
+            <div class="carousel-cell">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos harum maiores illo corporis hic fuga possimus quasi veritatis esse voluptatem.</p>
+                <p class="credit">This Person</p>
+            </div>
+            <div class="carousel-cell">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque pariatur commodi praesentium quod animi perspiciatis expedita.</p>
+                <p class="credit">This Person</p>
+            </div>
         </div>
     </section>
     
-    <section class="contact" id="contact">
+    <section class="contact">
+        <div id="toContact"></div>
         <div class="imageHolder">
             <img src="public/assets/megaphone.png" alt="" class="icon">
         </div>
+        <div class="wow fadeInDown" data-wow-duration="3s"></div>
         <h2>Get In Touch</h2>
-        <img src="public/assets/Gaby.jpg" alt="" class="gaby">
-        <h3>Gaby Küpfer</h3>
+        <!-- <img src="public/assets/Gaby.jpg" alt="" class="gaby">
+        <h3>Gaby Küpfer</h3> -->
+        <!-- <h3>Let's Talk About Your Next Project</h3> -->
+        <form action="GET" class="wrapper">
+            <div class="container">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="container">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <!-- <div class="container">
+                <label for="number">Phone Number</label>
+                <input type="text" name="number" id="number">
+            </div> -->
+            <!-- <div class="container">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject">
+            </div> -->
+            <div class="container">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+            </div>
+            <button>Submit Message</button>
+        </form>
         <ul class="social clearfix">
-            <li>
-                <a href="#" class="clearfix">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <p>@gabycodes</p>
-                </a>
-            </li>
             <li>
                 <a href="#" class="clearfix">
                     <i class="fa fa-github" aria-hidden="true"></i>
                     <p>github.com/gabycodes</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="clearfix">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <p>@gabycodes</p>
                 </a>
             </li>
             <li>
@@ -225,30 +261,6 @@
                 </a>
             </li>
         </ul>
-        <h3>Let's Talk About Your Next Project</h3>
-        <form action="GET" class="wrapper">
-            <div class="container">
-                <label for="name">Name *</label>
-                <input type="text" name="name" id="name">
-            </div>
-            <div class="container">
-                <label for="email">Email *</label>
-                <input type="text" name="email" id="email">
-            </div>
-            <div class="container">
-                <label for="number">Phone Number</label>
-                <input type="text" name="number" id="number">
-            </div>
-            <div class="container">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject">
-            </div>
-            <div class="container">
-                <label for="message">How Can I Help?</label>
-                <textarea name="message" id="message" rows="5"></textarea>
-            </div>
-            <button>Submit Message</button>
-        </form>
     </section>
     <footer>
         <div class="wrapper clearfix">

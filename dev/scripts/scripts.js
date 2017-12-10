@@ -33,8 +33,8 @@ $(document).ready(function () {
     $(function () {
         $(".typed").typed({
             strings: ["is friendly and positive.", 
-            // "codes with accessibility in mind.",
-            // "keeps things organized", 
+            "codes with accessibility in mind.",
+            "keeps things organized", 
             "is efficient and effective."],
             stringsElement: null,
             // typing speed

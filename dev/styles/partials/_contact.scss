@@ -2,6 +2,10 @@
     padding: 50px;
     position: relative;
 
+    #toContact {
+        position: absolute;
+        top: -50px;
+    }
     a p, a i {
         float: left;
         margin: 7px 2px;
@@ -53,27 +57,27 @@
     }
     h2 {
         position: relative;
-        margin-bottom: 45px;
+        margin-bottom: 65px;
+        background: white;
     }
     h2::before {
-        content: '';
-        position: absolute;
-        background: #e0e0e0;
-        width: 1.5px;
-        height: 37px;
-        top: -40px;
-        left: 50%;
-        transform: translateX(-50%);
+        // content: '';
+        // position: absolute;
+        // z-index: -1;
+        // background: #e0e0e0;
+        // width: 1.5px;
+        // height: 130px;
+        // top: -45px;
+        // left: 50%;
+        // transform: translateX(-50%);
     }
-    h2::after {
-        content: '';
+    .wow {
         position: absolute;
-        background: #e0e0e0;
+        height: 150px;
         width: 1.5px;
-        height: 54px;
-        bottom: -56px;
+        background: #e0e0e0;
+        top: 0;
         left: 50%;
-        transform: translateX(-50%);
     }
     h3:first-of-type {
         margin-bottom: 0;

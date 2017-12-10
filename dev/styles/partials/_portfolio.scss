@@ -23,7 +23,7 @@
         margin-bottom: 0;
     }
     p {
-        line-height: 2rem;
+        line-height: 2.5rem;
         color: gray;
     }
     p.tools {
@@ -33,19 +33,16 @@
     }
     .content button {
         border-radius: 0;
-        border-color: rgb(168, 168, 168);
-    }
-    .content button:first-of-type {
-        margin-right: 15px;
+        // border-color: rgb(168, 168, 168);
+        // border-color: #00A2FF;
         border:2px solid transparent;
         border-image: linear-gradient(45deg, rgb(255, 145, 0),rgb(224, 0, 17));
         border-image-slice: 1;
     }
-    // .flickity-vieport {
-    //     max-height: 390px;
-    // }
-    // .flickity-page-dots {
-    //     position: relative;
-    //     top: 10px;
-    // }
+    .content button:first-of-type {
+        margin-right: 15px;
+        // border:2px solid transparent;
+        // border-image: linear-gradient(45deg, rgb(255, 145, 0),rgb(224, 0, 17));
+        // border-image-slice: 1;
+    }
 }

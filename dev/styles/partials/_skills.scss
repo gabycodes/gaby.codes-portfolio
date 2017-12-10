@@ -1,7 +1,15 @@
 .skills {
-    background: linear-gradient(45deg, rgb(255, 145, 0),rgb(224, 0, 175));
+    background: linear-gradient(45deg, rgb(255, 145, 0),rgb(224, 0, 131));;
     padding: 50px 0;
     color: white;
+    position: relative;
+
+    #toSkills {
+        position: absolute;
+        top: -31px;
+        height: 2px;
+        background: black;
+    }
 
     img.icon {
         width: 45%;
@@ -11,26 +19,27 @@
         transform: translate(-50%,-50%);
     }
     h2 {
-        margin: 45px auto 55px auto;
+        margin: 30px auto 55px auto;
     }
     h3 {
         text-transform: none;
+        font-size: 2rem;
     }
     p {
         margin-top: 0;
     }
     .techSkills {
-        margin: 42px 0;
+        margin: 42px 0 0 0;
     }
     .techSkills i {
-        font-size: 8rem;
+        font-size: 7rem;
     }
     .techSkills li {
         width: 18%;
         margin-bottom: 20px;
     }
     li img {
-        max-width: 90px;
+        max-width: 68px;
         display: inline-block;
     }
 }
