@@ -57,7 +57,7 @@
     }
     h2 {
         position: relative;
-        margin-bottom: 65px;
+        margin: 51px 0 35px 0;
         background: white;
     }
     h2::before {
@@ -73,7 +73,7 @@
     }
     .wow {
         position: absolute;
-        height: 150px;
+        height: 100px;
         width: 1.5px;
         background: #e0e0e0;
         top: 0;
@@ -120,5 +120,12 @@
         margin: 2px 0 6px 11px;
         text-transform: uppercase;
         font-weight: bold;
+    }
+    button:hover, button:focus, button:active {
+        background: rgb(0, 140, 241);
+        border-color: rgb(0, 140, 241);
+        color: white;
+        top: -1px;
+        box-shadow: 0px 5px 12px rgba(0,0,0, 0.3);
     }
 }

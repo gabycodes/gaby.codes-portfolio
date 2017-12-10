@@ -1,6 +1,6 @@
 .hero {
     padding: 5px;
-    height: 72vh;
+    height: calc(100vh - 127px);
     background: 
         linear-gradient(45deg, rgba(255, 145, 0, 0.75),rgba(224, 0, 17, 0.75)),
         url(../assets/domenico-loia-310197.jpg);

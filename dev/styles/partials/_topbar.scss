@@ -1,13 +1,14 @@
 .topBar {
     background: rgb(21, 35, 53);
     font-family: 'Montserrat', sans-serif;
+    padding-top: 25px;
     
     a {
         font-size: 1.4rem;
         color: #2c3e50;
     }
     i {
-        color: white;
+        color: rgb(0, 140, 241);
         margin: 0 10px;
         font-size: 1.5rem;
     }
@@ -17,16 +18,23 @@
     nav {
         background: white;
         align-content: center;
+
         ul {
-            width: 100%;
+            width: 50%;
+            text-align: right;
+            display: inline-block;
+            float: right;
         }
         li {
-            width: 90px;
-            // margin: 19px 15px 20px 15px;
-            margin: 19px 0px 20px 0px;
+            text-align: right;
+            // width: 90px;
+            margin: 19px 0px 20px 2.5%;
             position: relative;
-            top: -18px;
+            // top: -18px;
             text-transform: uppercase;
+        }
+        ul:last-of-type {
+            float: left;
         }
         li.logo {
             min-width: 150px;
@@ -43,9 +51,8 @@
         }
     }
     .social {
-        display: block;
         padding: 8px;
-        
+        text-align: left;
     }
     p {
         font-size: 3rem;
