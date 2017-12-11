@@ -48,7 +48,7 @@
         transform: translate(-50%,-50%);
         position: absolute;
     }
-    img.icon {
+    .imageHolder.icon img {
         width: 45%;
         position: relative;
         top: 18px;
@@ -75,7 +75,7 @@
         position: absolute;
         height: 100px;
         width: 1.5px;
-        background: lightgray;
+        background: rgb(197, 197, 197);
         top: 0;
         left: 50%;
     }

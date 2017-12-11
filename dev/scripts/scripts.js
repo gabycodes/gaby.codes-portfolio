@@ -32,17 +32,17 @@ $(document).ready(function () {
 
     $(function () {
         $(".typed").typed({
-            strings: ["is friendly and positive.", 
-            "codes with accessibility in mind.",
-            "keeps things organized", 
-            "is efficient and effective."],
+            strings: ["code with accessibility in mind.",
+            "keep things organized.",
+            "am efficient and effective.",
+            "am friendly and positive."],
             stringsElement: null,
             // typing speed
-            typeSpeed: 35,
+            typeSpeed: 55,
             // time before typing starts
             startDelay: 400,
             // backspacing speed
-            backSpeed: 30,
+            backSpeed: 25,
             // time before backspacing
             backDelay: 600,
             // loop
@@ -69,5 +69,9 @@ $(document).ready(function () {
     });
 
     new WOW().init();
+
+    $(".accentLine").css({
+        "width":"500px"
+    });
 
 });

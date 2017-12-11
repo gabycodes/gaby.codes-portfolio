@@ -1,63 +1,32 @@
 .topBar {
     background: rgb(21, 35, 53);
     font-family: 'Montserrat', sans-serif;
-    padding-top: 25px;
-    
+
     a {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         color: #2c3e50;
     }
-    i {
+    a.name {
         color: rgb(0, 140, 241);
-        margin: 0 10px;
-        font-size: 1.5rem;
-    }
-    img {
-        width: 170px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        float: left;
     }
     nav {
         background: white;
         align-content: center;
+        padding: 25px 0;
 
         ul {
-            width: 50%;
+            min-width: 46rem;
             text-align: right;
-            display: inline-block;
             float: right;
         }
         li {
             text-align: right;
-            // width: 90px;
-            margin: 19px 0px 20px 2.5%;
-            position: relative;
-            // top: -18px;
+            float: left;
+            margin-left: 3%;
             text-transform: uppercase;
         }
-        ul:last-of-type {
-            float: left;
-        }
-        li.logo {
-            min-width: 150px;
-            text-transform: none;
-            margin: 22px 15px 0 15px;
-            top: 0;
-            left: -10px;
-        }
-        li.logo a {
-            color: #00A2FF;
-            font-size: 3rem;
-            position: relative;
-            top: -12px;
-        }
-    }
-    .social {
-        padding: 8px;
-        text-align: left;
-    }
-    p {
-        font-size: 3rem;
-        color: rgb(214, 0, 82);
-        margin: 20px 0;
-    }
-    
+    }    
 }
