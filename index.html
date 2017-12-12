@@ -13,52 +13,34 @@
     <link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
-    <header class="topBar">
-        <nav class="clearfix">
-            <div class="wrapper">
-                <ul class="clearfix">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#toAbout">About</a>
-                    </li>
-                    <li>
-                        <a href="#toSkills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#toContact">Contact</a>
-                    </li>
-                </ul>
-                <a href="#" class="name">Gaby Küpfer</a>
-                <!-- <ul class="clearfix social">
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-medium" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul> -->
-            </div>
-        </nav>
-    </header>
+    <header class="topBar clearfix wrapper">
+        <a href="#" class="name">Gaby Küpfer</a>
+        <nav>
+            <ul class="clearfix">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#toAbout">About</a>
+                </li>
+                <li>
+                    <a href="#toSkills">Skills</a>
+                </li>
+                <li>
+                    <a href="#toContact">Contact</a>
+                </li>
+                <a href="#" class="closeMenu">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </a>
+            </nav>
+        </ul>
+        <a href="#" class="hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        </header>
 
     <section class="hero">
         <div class="contentHolder">
@@ -81,9 +63,11 @@
             <img src="public/assets/Gaby.jpg" alt="" class="gaby">
             <div class="makeOpaque">
                 <div class="wow fadeInDown line1" data-wow-duration="5s"></div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et veritatis ea minus incidunt perferendis placeat, fuga natus debitis, quidem quia aliquid suscipit. Cum eligendi dolorum repellat quo qui, porro officia.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatum harum odit, laboriosam excepturi cupiditate ad saepe molestias veritatis, nesciunt illum quae aut quibusdam. Sit, inventore eum voluptatum voluptate blanditiis ratione laboriosam aliquid consectetur commodi molestias numquam quo recusandae? A!</p>
-                <button>More About Me</button>
+                <p>Hi, I’m Gaby! I’m a web developer based out of Toronto. I create apps and websites that are functional and accessible and always keep my code DRY.</p>
+                <p>I have a Game Development background. Before enrolling in the immersive web development course at
+                HackerYou, I worked as a 3D Artist for a small tech startup where, much by chance, I had the opportunity to use my knowledge of C#, the only programming language I knew at the time. I developed a simple VR experience for mobile,and quickly learned that I really liked to code!</p>
+                <p>When I’m not at the computer, I like to read and plan future travel adventures.</p>
+                <a href="#" class="button">View Resume</a>
             </div>
             <div class="wow fadeInDown line2" data-wow-duration="5s"></div>
             <div class="imageHolder bottom icon">
@@ -91,57 +75,52 @@
             </div>
         </div>
     </section>
-
     <section class="skills">
         <div class="wrapper">
             <div id="toSkills"></div>
             <h2>Skills and Tools</h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p> -->
-            <div class="techSkills">
-                <ul class="techSkills">
-                    <li>
-                        <i class="devicon-react-original"></i>
-                        <h3>React</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-javascript-plain"></i>
-                        <h3>JavaScript</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-html5-plain"></i>
-                        <h3>HTML5</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-css3-plain"></i>
-                        <h3>CSS</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-sass-original"></i>
-                        <h3>Sass</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-jquery-plain"></i>
-                        <h3>JQuery</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-gulp-plain"></i>
-                        <h3>Gulp</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-github-plain"></i>
-                        <h3>GitHub</h3>
-                    </li>
-                    <li>
-                        <img src="public/assets/firebase.png" alt="">
-                        <h3>Firebase</h3>
-                    </li>
-                    <li>
-                        <i class="devicon-photoshop-line"></i>
-                        <h3>Photoshop</h3>
-                    </li>
-                </ul>
-            </div>
-            <img src="#" alt="">
+            <ul class="techSkills">
+                <li>
+                    <i class="devicon-react-original"></i>
+                    <h3>React</h3>
+                </li>
+                <li>
+                    <i class="devicon-javascript-plain"></i>
+                    <h3>JavaScript</h3>
+                </li>
+                <li>
+                    <i class="devicon-html5-plain"></i>
+                    <h3>HTML5</h3>
+                </li>
+                <li>
+                    <i class="devicon-css3-plain"></i>
+                    <h3>CSS</h3>
+                </li>
+                <li>
+                    <i class="devicon-sass-original"></i>
+                    <h3>Sass</h3>
+                </li>
+                <li>
+                    <i class="devicon-jquery-plain"></i>
+                    <h3>JQuery</h3>
+                </li>
+                <li>
+                    <i class="devicon-gulp-plain"></i>
+                    <h3>Gulp</h3>
+                </li>
+                <li>
+                    <i class="devicon-github-plain"></i>
+                    <h3>GitHub</h3>
+                </li>
+                <li>
+                    <img src="public/assets/firebase.png" alt="">
+                    <h3>Firebase</h3>
+                </li>
+                <li>
+                    <i class="devicon-photoshop-line"></i>
+                    <h3>Photoshop</h3>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -153,26 +132,24 @@
             </div>
             <div class="content">
                 <h3>Taco Vs Sushi</h3>
-                <p class="tools">Gulp, React, JavaScript, CSS3, HTML5</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam veritatis dignissimos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio cum ab, porro accusamus voluptatibus
-                pariatur commodi culpa voluptate unde tempore, cumque assumenda numquam obcaecati!</p>
-                <button>View Live</button>
-                <button>View on GitHub</button>
+                <p class="tools">JQuery, JavaScript, CSS3, HTML5</p>
+                <p>Who will you stand beside in the ultimate showdown?</p>
+                <p>This quirky little quiz is my very first JavaScript app. I used JS and JQuery to add points to a tally that, after answering a few questions, will give you one of two results. If the points are tied, the final result will be randomly chosen. I used namespacing to keep it organized.</p>
+                <a href="http://www.tacovssushi.gaby.codes/" target="_blank" class="button">View Live</a>
+                <a href="#" target="_blank" class="button">View On GitHub</a>
             </div>
         </div>
         <div class="container wrapper clearfix">
-            <div class="content">
-                <h3>This Project</h3>
-                <p class="tools">Gulp, React, JavaScript, CSS3, HTML5</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam veritatis dignissimos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio cum ab, porro accusamus voluptatibus pariatur
-                    commodi culpa voluptate unde tempore, cumque assumenda numquam obcaecati!</p>
-                <button>View Live</button>
-                <button>View on GitHub</button>
-            </div>
             <div class="imageHolder wow fadeInRight">
                 <img src="public/assets/2_macbookair13_front.png" alt="">
+            </div>
+            <div class="content">
+                <h3>RecipeFinder</h3>
+                <p class="tools">JQuery, JavaScript, Gulp, Sass, CSS3, HTML5</p>
+                <p>Not sure what to make for dinner? This handy app lets you pick a main ingredient (or vegan, or vegetarian), and shows you recipes and wine pairings.</p>
+                <p>I used two APIs for this project and used JQuery to dynamically added the information I was retrieving to the DOM. I learned a lot with this one!</p>
+                <a href="http://www.recipefinder.gaby.codes/" target="_blank" class="button">View Live</a>
+                <a href="https://github.com/gabycodes/recipeFinder" target="_blank" class="button">View On GitHub</a>
             </div>
         </div>
         <div class="container wrapper clearfix">
@@ -180,13 +157,12 @@
                 <img src="public/assets/2_macbookair13_front.png" alt="">
             </div>
             <div class="content">
-                <h3>This Project</h3>
-                <p class="tools">Gulp, React, JavaScript, CSS3, HTML5</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veniam veritatis dignissimos.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio cum ab, porro accusamus voluptatibus
-                pariatur commodi culpa voluptate unde tempore, cumque assumenda numquam obcaecati!</p>
-                <button>View Live</button>
-                <button>View on GitHub</button>
+                <h3>SliceFinder</h3>
+                <p class="tools">React, JavaScript, Gulp, Sass, CSS3, HTML5</p>
+                <p>This app was the product of a group project for the Immersive Web Development course at HackerYou.</p>
+                <p>The work was split between myself and two other developers. I was responsible for implementing React Router to be able to change pages. I was also in charge of the design and did most of the styling myself; I had a lot of fun with it!</p>
+                <a href="https://slice-finder-ffdb6.firebaseapp.com/" target="_blank" class="button">View Live</a>
+                <a href="https://github.com/GottaCacheEmAll/sliceFinder" target="_blank" class="button">View On GitHub</a>
             </div>
         </div>
         <!--<div class="imageHolder icon">
@@ -194,8 +170,31 @@
         </div>-->
     </section>
 
-    <section class="quotes">
-        <img src="public/assets/quotes.png" alt="" class="quotesBackground">
+    <section class="interests">
+        <h2>Things I like</h2>
+        <ul>
+            <li>
+                <i class="devicon-react-original"></i>
+                <h3>Dan Brown Books</h3>
+            </li>
+            <li>
+                <i class="devicon-javascript-plain"></i>
+                <h3>Game of Thrones</h3>
+            </li>
+            <li>
+                <i class="devicon-html5-plain"></i>
+                <h3>Travel</h3>
+            </li>
+            <li>
+                <i class="devicon-css3-plain"></i>
+                <h3>Tea</h3>
+            </li>
+            <li>
+                <i class="devicon-sass-original"></i>
+                <h3>The Outdoors</h3>
+            </li>
+        </ul>
+        <!-- <img src="public/assets/quotes.png" alt="" class="quotesBackground">
         <div class="main-carousel">
             <div class="carousel-cell">
                 <p>Gaby is very diligent in her work, always following up with me on where she was according to plan and documenting everything that she did. Working with her was a true pleasure and I'd love to work with her again.</p>
@@ -209,10 +208,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque pariatur commodi praesentium quod animi perspiciatis expedita.</p>
                 <p class="credit">This Person</p>
             </div>
-        </div>
+        </div> -->
     </section>
     
-    <section class="contact">
+    <section class="contact wrapper">
         <div id="toContact"></div>
         <div class="imageHolder icon">
             <img src="public/assets/megaphone.png" alt="">
@@ -222,7 +221,7 @@
         <!-- <img src="public/assets/Gaby.jpg" alt="" class="gaby">
         <h3>Gaby Küpfer</h3> -->
         <!-- <h3>Let's Talk About Your Next Project</h3> -->
-        <form action="GET" class="wrapper">
+        <form action="GET">
             <div class="container">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name">
@@ -271,8 +270,10 @@
     <footer>
         <div class="wrapper clearfix">
             <div class="credit">
-                <p>2014 TheFox Design. All Rights Reserved. Designed by </p>
-                <a href="#">Tran Mau Tri Tam.</a>
+                <p>Design based on theme by</p>
+                <a href="#">Tran Mau Tri Tam</a>
+                <p>. Coded by Gaby Küpfer.</p>
+                
             </div>
             <ul class="social clearfix">
                 <li>

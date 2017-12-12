@@ -60,21 +60,10 @@
         margin: 51px 0 35px 0;
         background: white;
     }
-    h2::before {
-        // content: '';
-        // position: absolute;
-        // z-index: -1;
-        // background: #e0e0e0;
-        // width: 1.5px;
-        // height: 130px;
-        // top: -45px;
-        // left: 50%;
-        // transform: translateX(-50%);
-    }
     .wow {
         position: absolute;
         height: 100px;
-        width: 1.5px;
+        width: 2px;
         background: rgb(197, 197, 197);
         top: 0;
         left: 50%;
@@ -91,14 +80,17 @@
     }
     .container {
         float: left;
-        width: 50%;
+        width: calc(50% - 15px);
+    }
+    .container:first-of-type {
+        margin-right: 30px;
     }
     .container:last-of-type {
         width: 100%;
     }
     input[type='text'] {
         font-size: 1.4rem;
-        width: calc(100% - 20px);
+        width: 100%;
         margin-bottom: 10px;
         padding: 8px;
         border-radius: 4px;
@@ -106,7 +98,7 @@
     }
     textarea {
         font-size: 1.4rem;
-        width: calc(100% - 20px);
+        width: 100%;
         padding: 8px;
         border-radius: 4px;
         border: 1.5px solid lightgrey;

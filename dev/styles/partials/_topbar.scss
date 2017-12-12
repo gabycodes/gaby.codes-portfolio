@@ -1,10 +1,12 @@
 .topBar {
-    background: rgb(21, 35, 53);
+    background: white;
     font-family: 'Montserrat', sans-serif;
+    position: relative;
 
     a {
         font-size: 1.8rem;
         color: #2c3e50;
+        margin: 25px 0;
     }
     a.name {
         color: rgb(0, 140, 241);
@@ -12,21 +14,61 @@
         text-transform: uppercase;
         float: left;
     }
-    nav {
-        background: white;
-        align-content: center;
-        padding: 25px 0;
-
-        ul {
-            min-width: 46rem;
-            text-align: right;
-            float: right;
-        }
-        li {
-            text-align: right;
-            float: left;
-            margin-left: 3%;
-            text-transform: uppercase;
-        }
-    }    
+    .hamburger {
+        display: none;
+        float: right;
+        font-size: 2rem;
+        color: rgb(0, 140, 241);
+    }
 }
+// .default {
+//     right: 0;
+// }
+// .toTheRight {
+//     right: -350px;
+// }
+nav {
+    background: white;
+    align-content: center;
+    padding: 0;
+    float: right;
+    position: relative;
+    right: 0;
+
+    ul {
+        min-width: 46rem;
+        text-align: right;
+        margin: 25px 0;
+    }
+    li {
+        text-align: right;
+        float: left;
+        margin-left: 3%;
+        text-transform: uppercase;
+        position: relative;
+    }
+    li a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -8px;
+        background: rgb(0, 140, 241);
+        transition: width 0.35s ease-in;
+    }
+    li:hover a::after, li:focus a::after, li:active a::after {
+        width: 100%;
+    }
+    .closeMenu {
+        display: none;
+        font-size: 3rem;
+        color: rgb(0, 140, 241);
+        margin: 0 40px 0 0;
+        position: absolute;
+        top: 33px;
+        right: 0;
+        z-index: 2;
+    }
+}    

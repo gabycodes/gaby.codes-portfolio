@@ -31,24 +31,18 @@
     }
     p {
         color: gray;
-        max-width: 800px;
+        max-width: 850px;
         margin: 10px auto;
     }
-    button {
+    a.button {
         position: relative;
-        margin-bottom: 7px;
-    }
-    button:hover, button:focus, button:active {
-        background: rgb(0, 140, 241);
-        border-color: rgb(0, 140, 241);
-        color: white;
-        top: -1px;
-        box-shadow: 0px 5px 12px rgba(0,0,0, 0.3);
+        margin: 7px auto;
+        display: inline-block;
     }
     .wow.line1 {
         position: absolute;
         height: 98px;
-        width: 1.5px;
+        width: 2px;
         background: rgb(197, 197, 197);
         top: 34px;
         left: 50%;
@@ -57,7 +51,7 @@
     .wow.line2 {
         position: absolute;
         height: 135px;
-        width: 1.5px;
+        width: 2px;
         background: rgb(197, 197, 197);
         bottom: -30px;
         left: 50%;

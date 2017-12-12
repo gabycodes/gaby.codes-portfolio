@@ -1,12 +1,8 @@
 .portfolio {
     padding: 25px 0 70px 0;
-    // max-width: 900px;
     margin: 0 auto;
     position: relative;
 
-    .container {
-        // padding: 0 25px;
-    }
     .imageHolder {
         position: relative;
         top: 40px;
@@ -30,6 +26,12 @@
         left: 18px;
         transform: translate(-50%,-50%);
     }
+    .container {
+        margin: 25px auto;
+    }
+    .container:nth-child(2n + 1) .imageHolder {
+        float: right;
+    }
     .content {
         padding: 20px;
         text-align: left;
@@ -38,7 +40,7 @@
         margin-bottom: 0;
     }
     p {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         line-height: 2.5rem;
         color: gray;
     }
@@ -46,17 +48,12 @@
         margin: 0;
         color: rgb(0, 132, 214);
     }
-    button:hover, button:focus, button:active {
-        background: rgb(0, 140, 241);
-        border-color: rgb(0, 140, 241);
+    a.button {
         color: white;
-        top: -1px;
-        box-shadow: 0px 5px 12px rgba(0,0,0, 0.3);
+        display: inline-block;
+        margin: 0;
     }
     .content button:first-of-type {
         margin-right: 5px;
-        // border:2px solid transparent;
-        // border-image: linear-gradient(45deg, rgb(255, 145, 0),rgb(224, 0, 17));
-        // border-image-slice: 1;
     }
 }

@@ -74,4 +74,50 @@ $(document).ready(function () {
         "width":"500px"
     });
 
+    let navState = "default";
+    $(".hamburger").on("click", (e) => {
+        e.preventDefault();
+        $(".closeMenu").css({
+            "display":"inline"
+        });
+        $(".hamburger").css({
+            "opacity":"0"
+        });
+        $("nav").css({
+            "right":"0"
+        });
+        // if (screen.width >= 751) {
+        //     $("nav").addClass("default");
+        //     $("nav").removeClass("toTheRight");
+        // }
+        // if (screen.width < 750) {
+        //     $("nav").addClass("default");
+        //     $("nav").removeClass("toTheRight");
+        // }
+    })
+    $(".closeMenu").on("click", (e) => {
+        e.preventDefault();
+        $(".closeMenu").css({
+            "display":"none"
+        });
+        $(".hamburger").css({
+            "opacity":"1"
+        });
+        $("nav").css({
+            "right": "-355px"
+        });
+        // if (screen.width >= 751) {
+        //     $("nav").addClass("toTheRight");
+        //     $("nav").removeClass("default");
+        // }
+        // if (screen.width < 750) {
+        //     $("nav").addClass("toTheRight");
+        //     $("nav").removeClass("default");
+        // }
+    });
+    if (screen.width < 750) {
+        $(".closeMenu").css({
+            "display": "none"
+        });
+    }
 });
