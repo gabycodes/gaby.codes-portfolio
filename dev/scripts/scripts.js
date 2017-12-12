@@ -74,50 +74,69 @@ $(document).ready(function () {
         "width":"500px"
     });
 
+
+
+
+    let compactMenuOpen = false;
+
     let navState = "default";
     $(".hamburger").on("click", (e) => {
         e.preventDefault();
-        $(".closeMenu").css({
-            "display":"inline"
-        });
-        $(".hamburger").css({
-            "opacity":"0"
-        });
-        $("nav").css({
-            "right":"0"
-        });
-        // if (screen.width >= 751) {
-        //     $("nav").addClass("default");
-        //     $("nav").removeClass("toTheRight");
-        // }
-        // if (screen.width < 750) {
-        //     $("nav").addClass("default");
-        //     $("nav").removeClass("toTheRight");
-        // }
+        openMenu();
     })
     $(".closeMenu").on("click", (e) => {
         e.preventDefault();
-        $(".closeMenu").css({
-            "display":"none"
-        });
-        $(".hamburger").css({
-            "opacity":"1"
-        });
-        $("nav").css({
-            "right": "-355px"
-        });
-        // if (screen.width >= 751) {
-        //     $("nav").addClass("toTheRight");
-        //     $("nav").removeClass("default");
-        // }
-        // if (screen.width < 750) {
-        //     $("nav").addClass("toTheRight");
-        //     $("nav").removeClass("default");
-        // }
+        closeMenu();
     });
-    if (screen.width < 750) {
+    if (screen.width >= 751) {
         $(".closeMenu").css({
             "display": "none"
         });
+
+        compactMenuOpen = false;
     }
+    function closeMenu() {
+        $(".closeMenu").css({
+            "display": "none"
+        });
+        $(".hamburger").css({
+            "opacity": "1"
+        });
+
+        if (compactMenuOpen === true) {
+            $("nav").addClass("toTheRight");
+            $("nav").addClass("default");
+            compactMenuOpen = false;
+        }
+    }
+    function openMenu() {
+        $(".closeMenu").css({
+            "display": "inline"
+        });
+        $(".hamburger").css({
+            "opacity": "0"
+        });
+
+        if (compactMenuOpen === false) {
+            $("nav").addClass("default");
+            $("nav").removeClass("toTheRight");
+            compactMenuOpen = true;
+        }
+    }
+    function keepMenuHidden() {
+        $(".closeMenu").css({
+            "display": "none"
+        });
+        compactMenuOpen = false;
+    }
+
+    $(window).on('resize', function () {
+        if ($(window).width() >= 751) {
+            closeMenu();
+        }
+        if (compactMenuOpen === false) {
+            $("nav").addClass("toTheRight");
+            $("nav").addClass("default");
+        }
+    });
 });
