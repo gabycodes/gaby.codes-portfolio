@@ -32,10 +32,10 @@ $(document).ready(function () {
 
     $(function () {
         $(".typed").typed({
-            strings: ["code with accessibility in mind.",
-            "keep things organized.",
-            "am efficient and effective.",
-            "am friendly and positive."],
+            strings: ["I code with accessibility in mind.",
+            "I keep things organized.",
+            "I am efficient and effective.",
+            "I am friendly and positive."],
             stringsElement: null,
             // typing speed
             typeSpeed: 55,
@@ -68,10 +68,13 @@ $(document).ready(function () {
         });
     });
 
-    new WOW().init();
+    wow = new WOW({
+        mobile: false
+    });
+    wow.init();
 
     $(".accentLine").css({
-        "width":"500px"
+        "width":"35%"
     });
 
 
@@ -83,6 +86,9 @@ $(document).ready(function () {
     $(".hamburger").on("click", (e) => {
         e.preventDefault();
         openMenu();
+        $("nav").css({
+            "transition": "right 0.7s ease-in-out"
+        });
     })
     $(".closeMenu").on("click", (e) => {
         e.preventDefault();
@@ -91,6 +97,9 @@ $(document).ready(function () {
     if (screen.width >= 751) {
         $(".closeMenu").css({
             "display": "none"
+        });
+        $("nav").css({
+            "transition": "none"
         });
 
         compactMenuOpen = false;
@@ -104,6 +113,9 @@ $(document).ready(function () {
         });
 
         if (compactMenuOpen === true) {
+            // $("nav").css({
+            //     "transition":"right 0.5s ease-in"
+            // });
             $("nav").addClass("toTheRight");
             $("nav").addClass("default");
             compactMenuOpen = false;
@@ -114,7 +126,7 @@ $(document).ready(function () {
             "display": "inline"
         });
         $(".hamburger").css({
-            "opacity": "0"
+            // "opacity": "0"
         });
 
         if (compactMenuOpen === false) {
@@ -133,6 +145,9 @@ $(document).ready(function () {
     $(window).on('resize', function () {
         if ($(window).width() >= 751) {
             closeMenu();
+            $("nav").css({
+                "transition": "none"
+            });
         }
         if (compactMenuOpen === false) {
             $("nav").addClass("toTheRight");

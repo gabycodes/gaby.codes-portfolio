@@ -10,7 +10,8 @@
     z-index: 3;
 
     .contentHolder {
-        margin-top: 39vh;
+        position: relative;
+        top: 50%;
         transform: translateY(-50%);
     }
     h1, h2 {

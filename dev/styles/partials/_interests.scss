@@ -9,8 +9,8 @@
     h2 {
         margin-bottom: 70px;
     }
-    h3 {
-        font-size: 2rem;
+    ul {
+        margin-bottom: 25px;
     }
     li {
         width: 14%;
@@ -19,48 +19,12 @@
     li:last-of-type {
         margin-right: 0;
     }
+    img {
+        max-width: 65px;
+        margin: 0 auto;
+    }
     i {
         font-size: 7rem;
-    }
-   
-    img.quotesBackground {
-        position: absolute;
-        left: 50%;
-        width: 1000px;
-        display: inline-block;
-        top: 325px;
-        transform: translate(-50%,-75%);
-        opacity: 0.65;
-    }
-    .main-carousel {
-        margin: 50px 0;
-    }
-    .carousel-cell {
-        width: 100%;
-    }
-    .flickity-page-dots {
-        display: none;
-    }
-    .flickity-prev-next-button.previous {
-        left: -40px;
-    }
-    .flickity-prev-next-button.next {
-        right: -40px;
-    }
-    .flickity-prev-next-button {
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 3px;
-        width: 40px;
-        height: 40px;
-        top: 26%;
-        margin: 50px 3px 10px 3px;
-    }
-    .flickity-prev-next-button svg {
-        left: 30%;
-        width: 35%;
-    }
-    .flickity-prev-next-button .arrow {
-        fill: white;
     }
     p {
         max-width: 600px;
@@ -69,20 +33,6 @@
         font-size: 2.2rem;
         position: relative;
         text-shadow: 0px 0.5px 10px rgba(0,0,0, 0.15);
-    }
-    p:first-of-type::before {
-        // content: '“';
-        position: absolute;
-        font-size: 4rem;
-        top: 0;
-        left: 0;
-    }
-    p:first-of-type::after {
-        // content: '”';
-        position: absolute;
-        font-size: 4rem;
-        bottom: 0;
-        right: 0;
     }
     p:last-of-type {
         margin-top: 31px;

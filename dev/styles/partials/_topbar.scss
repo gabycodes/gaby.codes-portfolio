@@ -14,11 +14,20 @@
         text-transform: uppercase;
         float: left;
     }
+    a.name, .hamburger {
+        transition: transform 0.2s ease-in;
+    }
+    a.name:hover, a.name:focus, a.name:active {
+        transform: scale(1.02);
+    }
     .hamburger {
         display: none;
         float: right;
         font-size: 2rem;
         color: rgb(0, 140, 241);
+    }
+    .hamburger:hover, .hamburger:focus, .hamburger:active {
+        transform: scale(1.1);
     }
 }
 .default {
@@ -32,6 +41,7 @@ nav {
     float: right;
     position: relative;
     right: 0;
+    z-index: 4;
 
     ul {
         min-width: 46rem;
