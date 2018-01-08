@@ -17,9 +17,6 @@
     a.name, .hamburger {
         transition: transform 0.2s ease-in;
     }
-    a.name:hover, a.name:focus, a.name:active {
-        transform: scale(1.02);
-    }
     .hamburger {
         display: none;
         float: right;
