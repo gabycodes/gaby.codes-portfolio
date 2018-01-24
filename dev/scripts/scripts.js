@@ -33,9 +33,12 @@ $(document).ready(function () {
     $(function () {
         $(".typed").typed({
             strings: ["I code with accessibility in mind.",
-            "I keep things organized.",
-            "I am efficient and effective.",
-            "I am friendly and positive."],
+            "I like to keep things organized.",
+            "I'm efficient and effective.",
+            "My go-to coding playlist: 70's Hits or the Foo Fighters",
+            "I like sharing and teaching others.",
+            "I'm a solo traveler.",
+            "I'm a friendly and positive person."],
             stringsElement: null,
             // typing speed
             typeSpeed: 55,
@@ -77,9 +80,6 @@ $(document).ready(function () {
         "width":"35%"
     });
 
-
-
-
     let compactMenuOpen = false;
 
     let navState = "default";
@@ -113,9 +113,6 @@ $(document).ready(function () {
         });
 
         if (compactMenuOpen === true) {
-            // $("nav").css({
-            //     "transition":"right 0.5s ease-in"
-            // });
             $("nav").addClass("toTheRight");
             $("nav").addClass("default");
             compactMenuOpen = false;
@@ -126,7 +123,6 @@ $(document).ready(function () {
             "display": "inline"
         });
         $(".hamburger").css({
-            // "opacity": "0"
         });
 
         if (compactMenuOpen === false) {
